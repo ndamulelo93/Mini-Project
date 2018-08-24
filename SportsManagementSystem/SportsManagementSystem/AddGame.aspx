@@ -5,6 +5,8 @@
     <link href="vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet" />
     <div class="nav-md">
         <div class="right_col" role="main">
+            <div class = "">
+                
             <div class="">
                 <div class="page-title">
                     <div class="title_left">
