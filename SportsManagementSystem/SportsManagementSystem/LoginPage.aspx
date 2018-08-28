@@ -6,7 +6,7 @@
        <div class="nav-md">
    <div class="right_col" role="main">
           <div class="">
-            <div class="page-title">
+            <div class="page-title"> //Page title
               <div class="title_left">
                 <h3>Login</h3>
               </div>
@@ -36,7 +36,7 @@
                       </div>
                       
                       <div class="item form-group">
-                        <label for="password" class="control-label col-md-3">Password</label>
+                        <label for="password" class="control-label col-md-3">Password</label> //Password 
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <input id="password" runat="server" type="password" name="password" data-validate-length="6,8" class="form-control col-md-7 col-xs-12" required="required"/>
                         </div>
