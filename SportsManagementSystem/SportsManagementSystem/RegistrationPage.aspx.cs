@@ -40,7 +40,9 @@ namespace SportsManagementSystem
         //    }
         //}
 
-        protected void lnkReg_Click(object sender, EventArgs e)
+      //User Details 
+      
+      protected void lnkReg_Click(object sender, EventArgs e)
         {
             RegServiceClient rsc = new RegServiceClient();
             string level = role.Value;
@@ -57,7 +59,7 @@ namespace SportsManagementSystem
                 //Upload Image
                 makeDirectory(Convert.ToString(strResponse));
 
-                //Upload Team Image
+                //Upload Team Images
                 ImageFile img = new ImageFile();
                 img = UploadFile(flUserImge, Convert.ToString(strResponse), "User_Image", "Users"); //Upload Event Main's Image to client directory
                 FileClient fc = new FileClient();
