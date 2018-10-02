@@ -76,3 +76,43 @@ namespace SportWCF
                 return query;
             };
         }
+  public string PostEmployee(employee employee)
+        {
+            try
+            {
+                using (SPORT_LINK_DBDataContext db = new SPORT_LINK_DBDataContext())
+                {
+                    var innerJoinQuery =
+                       (from file in db.Employees
+                        where file.EmpNo.Equals(Convert.ToInt32(employee.EmpNo))
+                        select file);
+                    if (innerJoinQuery.Count() == 0)
+                    {
+                        Employee res = new Employee();
+                        res.EmpNo = employee.EmpNo;
+                        res.EmpName = employee.EmpName;
+                        res.DeptName = employee.DeptName;
+                        res.Designation = employee.Designation;
+                        db.Employees.InsertOnSubmit(res);
+                        db.SubmitChanges();
+                        return "success created";
+                    }
+                    else
+                    {
+                        Employee res = innerJoinQuery.Single();
+                        res.EmpNo = employee.EmpNo;
+                        res.EmpName = employee.EmpName;
+                        res.DeptName = employee.DeptName;
+                        res.Designation = employee.Designation;
+                        // db.Employees.InsertOnSubmit(res);
+                        db.SubmitChanges();
+                        return "success edited";
+                    }
+
+                };
+            }
+            catch (Exception)
+            {
+                return "failed";
+            }
+        }
