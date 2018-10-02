@@ -1,0 +1,292 @@
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\ApplicationInsights.config
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\roslyn\csc.exe
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\roslyn\vbc.exe
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\SportWCF.dll.config
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\SportWCF.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\SportWCF.pdb
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\SportClient.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\SportClient.pdb
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.xml
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.dll
+C:\Users\Admin\Desktop\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.pdb
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\ApplicationInsights.config
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\csc.exe
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\vbc.exe
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportWCF.dll.config
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportWCF.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportWCF.pdb
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportClient.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportClient.pdb
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.xml
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.pdb
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\EPPlus.dll
+C:\Users\Admin\Desktop\Tender\SportsManagementSystem\SportWCF\bin\EPPlus.xml
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\ApplicationInsights.config
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\csc.exe
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\vbc.exe
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\SportWCF.dll.config
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\SportWCF.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\SportWCF.pdb
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\EPPlus.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\SportClient.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\SportClient.pdb
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\EPPlus.xml
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.xml
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.dll
+C:\Users\Admin\Desktop\Tender\D2\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.pdb
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\ApplicationInsights.config
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\csc.exe
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\vbc.exe
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\SportWCF.dll.config
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\SportWCF.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\SportWCF.pdb
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\EPPlus.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\SportClient.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\SportClient.pdb
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\EPPlus.xml
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.xml
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.dll
+C:\Users\Admin\Desktop\Semester_2\Tender\D2\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.pdb
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\ApplicationInsights.config
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\csc.exe
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\vbc.exe
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportWCF.dll.config
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportWCF.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportWCF.pdb
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\EPPlus.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Newtonsoft.Json.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportClient.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportClient.pdb
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\EPPlus.xml
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.xml
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Newtonsoft.Json.xml
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.csprojResolveAssemblyReference.cache
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.dll
+C:\Users\Tumelo Makwakwa\Desktop\Tender\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.pdb
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\ApplicationInsights.config
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\csc.exe
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\vbc.exe
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportWCF.dll.config
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportWCF.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportWCF.pdb
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\EPPlus.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Newtonsoft.Json.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportClient.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportClient.pdb
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\EPPlus.xml
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.xml
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Newtonsoft.Json.xml
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.csprojResolveAssemblyReference.cache
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.dll
+C:\Users\Thato Mokoena\Desktop\Tender\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.pdb
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\ApplicationInsights.config
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\csc.exe
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\vbc.exe
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportWCF.dll.config
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportWCF.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportWCF.pdb
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\EPPlus.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Newtonsoft.Json.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportClient.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\SportClient.pdb
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\EPPlus.xml
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.xml
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\bin\Newtonsoft.Json.xml
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.csprojResolveAssemblyReference.cache
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.dll
+C:\Users\Hypervision\Desktop\Tender\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.pdb
+F:\Tender\SportsManagementSystem\SportWCF\bin\ApplicationInsights.config
+F:\Tender\SportsManagementSystem\SportWCF\bin\roslyn\csc.exe
+F:\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Tender\SportsManagementSystem\SportWCF\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Tender\SportsManagementSystem\SportWCF\bin\roslyn\System.Collections.Immutable.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\roslyn\System.Reflection.Metadata.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\roslyn\vbc.exe
+F:\Tender\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe
+F:\Tender\SportsManagementSystem\SportWCF\bin\roslyn\VBCSCompiler.exe.config
+F:\Tender\SportsManagementSystem\SportWCF\bin\SportWCF.dll.config
+F:\Tender\SportsManagementSystem\SportWCF\bin\SportWCF.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\SportWCF.pdb
+F:\Tender\SportsManagementSystem\SportWCF\bin\EPPlus.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\Newtonsoft.Json.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\SportClient.dll
+F:\Tender\SportsManagementSystem\SportWCF\bin\SportClient.pdb
+F:\Tender\SportsManagementSystem\SportWCF\bin\EPPlus.xml
+F:\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.DependencyCollector.xml
+F:\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.Web.xml
+F:\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.AI.WindowsServer.xml
+F:\Tender\SportsManagementSystem\SportWCF\bin\Microsoft.ApplicationInsights.xml
+F:\Tender\SportsManagementSystem\SportWCF\bin\Newtonsoft.Json.xml
+F:\Tender\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.csprojResolveAssemblyReference.cache
+F:\Tender\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.dll
+F:\Tender\SportsManagementSystem\SportWCF\obj\Debug\SportWCF.pdb
