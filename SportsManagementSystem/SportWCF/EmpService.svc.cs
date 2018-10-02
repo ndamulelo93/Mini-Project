@@ -116,3 +116,13 @@ namespace SportWCF
                 return "failed";
             }
         }
+        
+             };
+            }
+            catch (Exception)
+            {
+                return "failed";
+            }
+        }
+    }
+}
