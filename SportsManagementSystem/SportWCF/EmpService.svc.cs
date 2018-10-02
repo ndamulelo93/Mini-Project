@@ -58,4 +58,21 @@ namespace SportWCF
                 return data;
             };
         }
-        
+          public employee getEmployeeByID(string strID)
+        {
+            int _id = Convert.ToInt32(strID);
+            using (SPORT_LINK_DBDataContext db = new SPORT_LINK_DBDataContext())
+            {
+                var query = (from emp in db.Employees
+                             where emp.EmpNo.Equals(_id)
+                             select new employee
+                             {
+                                 EmpNo = Convert.ToInt32(emp.EmpNo),
+                                 EmpName = emp.EmpName,
+                                 Salary = Convert.ToInt32(emp.Salary),
+                                 DeptName = emp.DeptName,
+                                 Designation = emp.Designation,
+                             }).First();
+                return query;
+            };
+        }
