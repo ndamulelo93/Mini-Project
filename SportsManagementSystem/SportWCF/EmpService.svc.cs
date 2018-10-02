@@ -37,3 +37,25 @@ namespace SportWCF
                 return "Failed";
             }
         }
+         public List<employee> getAllEmployee()
+        {
+            using (SPORT_LINK_DBDataContext db = new SPORT_LINK_DBDataContext())
+            {
+                List<employee> data = new List<employee>();
+                var query = (from emp in db.Employees
+                             select new employee
+                             {
+                                 EmpNo = Convert.ToInt32(emp.EmpNo),
+                                 EmpName = emp.EmpName,
+                                 Salary = Convert.ToInt32(emp.Salary),
+                                 DeptName = emp.DeptName,
+                                 Designation = emp.Designation,
+                             }).ToList();
+                foreach(employee emp in query)
+                {
+                    data.Add(emp);
+                }
+                return data;
+            };
+        }
+        
