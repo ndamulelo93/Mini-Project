@@ -27,8 +27,8 @@ namespace SportsManagementSystem
             toCreate.Name = txtName.Value;
             toCreate.Price = Convert.ToDecimal(txtPrice.Value);
             toCreate.Desc = txtDesc.Value;
-            toCreate.sDate = DateTime.ParseExact(txtsDate.Text, "yyyy-MM-ddTHH:mm", CultureInfo.InvariantCulture);
-            toCreate.eDate = DateTime.ParseExact(txteDate.Text, "yyyy-MM-ddTHH:mm", CultureInfo.InvariantCulture);
+            toCreate.sDate = DateTime.ParseExact(txtsDate.Text, "yyyy-MM-ddTHH:mm", CultureInfo.InvariantCulture); //setting date and time
+            toCreate.eDate = DateTime.ParseExact(txteDate.Text, "yyyy-MM-ddTHH:mm", CultureInfo.InvariantCulture); //date and time 
             toCreate.foreignID = LoggedID;
             toCreate.NumTeams = Convert.ToInt32(txtNumTeams.Value);
             toCreate.Category = txtType.Value;
