@@ -34,7 +34,7 @@ namespace SportsManagementSystem
             int GameID = msc.AddMatch(game);
             //Upload Game Image
             ImageFile img = new ImageFile();
-            img = UploadFile(flImage, Convert.ToString(game.LeagueID), "Game_Images", "Leagues");
+            img = UploadFile(flImage, Convert.ToString(game.LeagueID), "Game_Images", "Leagues"); //uploading an image 
             img.foreignID = Convert.ToString(GameID);
             FileClient fc = new FileClient();
             string res1 = fc.saveGameImage(img);
