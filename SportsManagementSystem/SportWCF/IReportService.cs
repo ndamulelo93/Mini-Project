@@ -50,3 +50,18 @@ namespace SportWCF
         [WebInvoke(Method = "GET", UriTemplate = "gt_LeagueBestTeam/{leagueID}", ResponseFormat =
          WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
         List<rep_Teams> gt_LeagueBestTeam(string leagueID);
+        
+        
+        //Get player's ranking in a team
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "gt_PlayerRanking/{sportID}", ResponseFormat =
+         WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        List<rep_Teams> gt_PlayerRanking(string sportID);
+
+        //Get Team performance in a league
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "gt_TeamAverage/{sportID}", ResponseFormat =
+         WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        List<rep_Teams> gt_TeamAverage(string sportID);
+    }
+}
