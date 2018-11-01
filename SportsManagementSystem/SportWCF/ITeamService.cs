@@ -36,3 +36,15 @@ namespace SportWCF
         [WebInvoke(Method = "GET", UriTemplate = "getAllTeamByUserID/{ID}", ResponseFormat =
               WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
         List<MyTeamModel> getAllTeamByUserID(string ID);
+        
+         ////Get All teams per sport category
+        //[OperationContract]
+        //[WebInvoke(Method = "GET", UriTemplate = "getAllGames", ResponseFormat =
+        //      WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        //List<Team> getAllGames();
+
+        //Get Two playing game
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "getTeamsByGameID/{gID}", ResponseFormat =
+              WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        List<TeamModel> getTeamsByGameID(string gID);
