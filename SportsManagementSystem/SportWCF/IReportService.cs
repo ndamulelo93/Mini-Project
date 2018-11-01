@@ -32,3 +32,21 @@ namespace SportWCF
         [WebInvoke(Method = "GET", UriTemplate = "gt_LeaguesStats", ResponseFormat =
           WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
         List<rep_league> gt_LeaguesStats();
+        
+         //Compare all leagues: Useful for administrators
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "gt_LeaguesStatsForAdmin/{ID}", ResponseFormat =
+          WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        List<rep_league> gt_LeaguesStatsForAdmin(string  ID);
+
+        //Get league's player stats, both for overall best player and top goal scorer
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "gt_LeagueBestPlayer/{ID},{type}", ResponseFormat =
+         WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        List<bestplayer> gt_LeagueBestPlayer(string ID, string type);
+
+        //Get teams in the league with highest average
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "gt_LeagueBestTeam/{leagueID}", ResponseFormat =
+         WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        List<rep_Teams> gt_LeagueBestTeam(string leagueID);
