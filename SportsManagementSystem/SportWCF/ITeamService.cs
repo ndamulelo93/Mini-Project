@@ -48,3 +48,27 @@ namespace SportWCF
         [WebInvoke(Method = "GET", UriTemplate = "getTeamsByGameID/{gID}", ResponseFormat =
               WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
         List<TeamModel> getTeamsByGameID(string gID);
+        
+        
+        //Get Teams by User ID
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "getTeamsByUserID/{ID}", ResponseFormat =
+              WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        List<TeamModel> getTeamsByUserID(string ID);
+
+
+        //Get Team Details by team ID
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "getTeamsDetails/{ID}", ResponseFormat =
+              WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        TeamModel getTeamsDetails(string ID);
+
+        //Deletions=============================================>>>.
+        //Delete Log by league ID
+        [OperationContract]
+        [WebInvoke(Method = "DELETE", UriTemplate = "DeleteSportByID/{ID}", ResponseFormat =
+            WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        string DeleteSportByID(string ID);
+    }
+}
+
