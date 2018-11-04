@@ -70,3 +70,56 @@ namespace SportWCF
                 return "Failed";
             }
         }
+        
+        public List<Log> GetLogByLeagueID(string ID)
+        {
+            int _id = Convert.ToInt32(ID);
+            using (SPORT_LINK_DBDataContext db = new SPORT_LINK_DBDataContext())
+            {
+                try
+                {
+                    var query = (from log in db.LOGs where log.League_Id.Equals(_id)
+                                 select new Log
+                                 {
+                                     ID = log.Log_Id,
+                                     TeamName = log.TeamName,
+                                     LeagueName = log.LEAGUE.Name,
+                                     Position = Convert.ToInt32(log.Position),
+                                     MatchPlayed = Convert.ToInt32(log.MatchPlayed),
+                                     Wins = Convert.ToInt32(log.Wins),
+                                     Loose = Convert.ToInt32(log.Loose),
+                                     Draws = Convert.ToInt32(log.Draws),
+                                     Points = Convert.ToInt32(log.Points),
+                                 }).ToList();
+                    List<Log> items = new List<Log>();
+                    foreach(Log lg in query)
+                    {
+                        items.Add(lg);
+                    }
+                    return items;
+                    //if(query != null)
+                    //{
+                    //    Log res = new Log();
+                    //    res.ID = query.ID;
+                    //    res.League_ID = query.League_ID;
+                    //    res.TeamName = query.TeamName;
+                    //    res.LeagueName = query.LeagueName;
+                    //    res.Position = query.Position;
+                    //    res.MatchPlayed = query.MatchPlayed;
+                    //    res.Wins = query.Wins;
+                    //    res.Loose = query.Loose;
+                    //    res.Draws = query.Draws;
+                    //    res.Points = query.Points;
+                    //    return res;
+                    //}else
+                    //{
+                    //    return null;
+                    //}
+
+                }catch(Exception)
+                {
+                    return null;
+                }
+            };
+        }
+        
