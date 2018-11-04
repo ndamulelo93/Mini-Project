@@ -122,4 +122,40 @@ namespace SportWCF
                 }
             };
         }
+         public string UpdateLog(Log log)
+        {
+            using (SPORT_LINK_DBDataContext db = new SPORT_LINK_DBDataContext())
+            {
+                try
+                {
+                    var query = (from tm in db.LOGs where tm.Log_Id.Equals(log.ID) select tm);
+                    if (query.Count() != 0)
+                    {
+                        LOG toinsert = query.Single();
+                        toinsert.TeamName = log.TeamName;
+                        toinsert.Position = log.Position;
+                        toinsert.MatchPlayed = log.MatchPlayed;
+                        toinsert.Wins = log.Wins;
+                        toinsert.Loose = log.Loose;
+                        toinsert.Draws = log.Draws;
+                        toinsert.Points = log.Points;
+                     //   toinsert.League_Id = log.League_ID;
+                        db.SubmitChanges();
+                        return "success";
+                    }
+                    else
+                    {
+                        return "failed: No Such team exist";
+                    }
+                }
+                catch (Exception)
+                {
+                    return "failed";
+                }
+            };
+        }
+    }
+}
+
+        
         
