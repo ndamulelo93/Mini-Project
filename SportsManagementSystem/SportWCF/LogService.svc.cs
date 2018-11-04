@@ -44,3 +44,29 @@ namespace SportWCF
                 return "failed: catched";
             }
         }
+        
+                public string DeletLogbyLeagueID(string ID)
+        {
+            int _id = Convert.ToInt32(ID);
+            try
+            {
+                using (SPORT_LINK_DBDataContext db = new SPORT_LINK_DBDataContext())
+                {
+                    List<LOG> toDelete = (from dl in db.LOGs where dl.League_Id == _id select dl).ToList();
+                    if (toDelete == null)
+                    {
+                        return "Failed: Log Not Found";
+                    }
+                    else
+                    {
+                        db.LOGs.DeleteAllOnSubmit(toDelete);
+                        db.SubmitChanges();
+                        return "success";
+                    }
+                };
+            }
+            catch (Exception)
+            {
+                return "Failed";
+            }
+        }
