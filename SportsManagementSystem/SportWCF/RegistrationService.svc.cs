@@ -45,3 +45,41 @@ namespace SportWCF
                 }
             };
         }
+        public int registerUser(BASE_USER user)
+        {
+            try
+            {
+                string hashedPass = HashPassword.HashPass(user.Pass);
+                using (SPORT_LINK_DBDataContext db = new SPORT_LINK_DBDataContext())
+                {
+                        int isAvail = (from eh in db.USERs where eh.Email.Equals(user.Email) select eh).Count();
+                        if (isAvail == 0)
+                        {
+                            USER _user = new USER();
+                            _user.Name = user.Name;
+                            _user.Level = user.Level;
+                            _user.Surname = user.Surname;
+                            _user.Email = user.Email;
+                            _user.Password = hashedPass;
+                            _user.UserImage = user.imgLocation;
+                            db.USERs.InsertOnSubmit(_user);
+                            db.SubmitChanges();
+                        }
+                };
+
+                using (SPORT_LINK_DBDataContext db = new SPORT_LINK_DBDataContext())
+                {
+
+                    var queryID = (from eh in db.USERs where eh.Email.Equals(user.Email) select eh);
+                    USER res = queryID.Single();
+                    int ID = res.UserId;
+                    return ID;
+                };
+            }
+            catch (Exception)
+            {
+                return 0;
+            }
+        }
+    }
+}
