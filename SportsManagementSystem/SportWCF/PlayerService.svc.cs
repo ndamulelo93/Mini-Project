@@ -37,3 +37,37 @@ namespace SportWCF
                 return "Failed";
             }
         }
+         public List<Player> getAllTeamPlayers(string teamID)
+        {
+            int _id = Convert.ToInt32(teamID);
+            using(SPORT_LINK_DBDataContext db = new SPORT_LINK_DBDataContext())
+            {
+                try
+                {
+                    List<Player> players = new List<Player>();
+                    var query = (from pl in db.TEAMPLAYERs
+                                 where pl.Sport_Id.Equals(_id)
+                                 select new Player
+                                 {
+                                     ID = pl.PlayerId,
+                                     SportID = Convert.ToInt32(pl.Sport_Id),
+                                     
+                                     Name = pl.Name,
+                                     Position = pl.Position,
+                                     PerformanceRate = Convert.ToDecimal(pl.PerformanceRate),
+                                     Desc = pl.Description,
+                                 }).ToList();
+                    foreach(Player items in query)
+                    {
+                        players.Add(items);
+                    }
+                    return players;
+                } catch (Exception)
+                {
+                    return null;
+                }
+            };
+        }
+    }
+}
+        
