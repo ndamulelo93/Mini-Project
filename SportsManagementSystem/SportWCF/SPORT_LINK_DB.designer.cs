@@ -269,4 +269,183 @@ namespace SportWCF
 		
 		private EntityRef<LEAGUE> _LEAGUE;
 		
+		#region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void Onleague_IDChanging(int value);
+    partial void Onleague_IDChanged();
+    partial void OnScorerNameChanging(string value);
+    partial void OnScorerNameChanged();
+    partial void OnGoalsChanging(System.Nullable<int> value);
+    partial void OnGoalsChanged();
+    partial void OnAverageChanging(System.Nullable<decimal> value);
+    partial void OnAverageChanged();
+    #endregion
 		
+		public BEST_PLAYER()
+		{
+			this._LEAGUE = default(EntityRef<LEAGUE>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_league_ID", DbType="Int NOT NULL")]
+		public int league_ID
+		{
+			get
+			{
+				return this._league_ID;
+			}
+			set
+			{
+				if ((this._league_ID != value))
+				{
+					if (this._LEAGUE.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onleague_IDChanging(value);
+					this.SendPropertyChanging();
+					this._league_ID = value;
+					this.SendPropertyChanged("league_ID");
+					this.Onleague_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ScorerName", DbType="VarChar(MAX)")]
+		public string ScorerName
+		{
+			get
+			{
+				return this._ScorerName;
+			}
+			set
+			{
+				if ((this._ScorerName != value))
+				{
+					this.OnScorerNameChanging(value);
+					this.SendPropertyChanging();
+					this._ScorerName = value;
+					this.SendPropertyChanged("ScorerName");
+					this.OnScorerNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Goals", DbType="Int")]
+		public System.Nullable<int> Goals
+		{
+			get
+			{
+				return this._Goals;
+			}
+			set
+			{
+				if ((this._Goals != value))
+				{
+					this.OnGoalsChanging(value);
+					this.SendPropertyChanging();
+					this._Goals = value;
+					this.SendPropertyChanged("Goals");
+					this.OnGoalsChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Average", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> Average
+		{
+			get
+			{
+				return this._Average;
+			}
+			set
+			{
+				if ((this._Average != value))
+				{
+					this.OnAverageChanging(value);
+					this.SendPropertyChanging();
+					this._Average = value;
+					this.SendPropertyChanged("Average");
+					this.OnAverageChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LEAGUE_BEST_PLAYER", Storage="_LEAGUE", ThisKey="league_ID", OtherKey="League_Id", IsForeignKey=true)]
+		public LEAGUE LEAGUE
+		{
+			get
+			{
+				return this._LEAGUE.Entity;
+			}
+			set
+			{
+				LEAGUE previousValue = this._LEAGUE.Entity;
+				if (((previousValue != value) 
+							|| (this._LEAGUE.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._LEAGUE.Entity = null;
+						previousValue.BEST_PLAYERs.Remove(this);
+					}
+					this._LEAGUE.Entity = value;
+					if ((value != null))
+					{
+						value.BEST_PLAYERs.Add(this);
+						this._league_ID = value.League_Id;
+					}
+					else
+					{
+						this._league_ID = default(int);
+					}
+					this.SendPropertyChanged("LEAGUE");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
