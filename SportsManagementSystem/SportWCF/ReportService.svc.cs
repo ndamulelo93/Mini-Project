@@ -232,3 +232,51 @@ namespace SportWCF
                 }
             };
         }
+        
+        public List<rep_league> gt_LeaguesStatsForAdmin(string ID)
+        {
+
+            int id = Convert.ToInt32(ID);//league ID
+            List<rep_league> data = new List<rep_league>();
+            using (SPORT_LINK_DBDataContext db = new SPORT_LINK_DBDataContext())
+            {
+                
+                try
+                {
+                    //Find User ID
+                    int leagueID = (from lg in db.LEAGUEs where lg.League_Id.Equals(id) select lg.USER.UserId).First();
+                  
+                    var query = (from log in db.LEAGUEs where log.USER.UserId.Equals(leagueID) select log).ToList();
+                    if (query != null)
+                    {
+                        foreach (LEAGUE leagues in query)
+                        {
+
+                            var res = (from sums in db.LOGs
+                                       where sums.LEAGUE.League_Id.Equals(leagues.League_Id)
+                                       select sums).ToList();
+                            int wins = Convert.ToInt32(res.Sum(p => p.Wins));
+                            int looses = Convert.ToInt32(res.Sum(p => p.Loose));
+                            int draws = Convert.ToInt32(res.Sum(p => p.Draws));
+
+                            rep_league items = new rep_league();
+                            items.LeagueName = leagues.Name;
+                            items.Wins = wins;
+                            items.Lose = looses;
+                            items.Draws = draws;
+                            data.Add(items);
+                        }
+                        return data;
+                    }
+                    return null;
+                }
+                catch (Exception)
+                {
+                    return null;
+                }
+            };
+        }
+
+
+        
+        
