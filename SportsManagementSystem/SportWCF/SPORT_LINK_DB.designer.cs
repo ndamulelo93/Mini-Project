@@ -1990,4 +1990,407 @@ namespace SportWCF
 			}
 		}
 			
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_eDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> eDate
+		{
+			get
+			{
+				return this._eDate;
+			}
+			set
+			{
+				if ((this._eDate != value))
+				{
+					this.OneDateChanging(value);
+					this.SendPropertyChanging();
+					this._eDate = value;
+					this.SendPropertyChanged("eDate");
+					this.OneDateChanged();
+				}
+			}
+		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NumTeams", DbType="Int")]
+		public System.Nullable<int> NumTeams
+		{
+			get
+			{
+				return this._NumTeams;
+			}
+			set
+			{
+				if ((this._NumTeams != value))
+				{
+					this.OnNumTeamsChanging(value);
+					this.SendPropertyChanging();
+					this._NumTeams = value;
+					this.SendPropertyChanged("NumTeams");
+					this.OnNumTeamsChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserId", DbType="Int")]
+		public System.Nullable<int> UserId
+		{
+			get
+			{
+				return this._UserId;
+			}
+			set
+			{
+				if ((this._UserId != value))
+				{
+					if (this._USER.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnUserIdChanging(value);
+					this.SendPropertyChanging();
+					this._UserId = value;
+					this.SendPropertyChanged("UserId");
+					this.OnUserIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LEAGUE_BEST_PLAYER", Storage="_BEST_PLAYERs", ThisKey="League_Id", OtherKey="league_ID")]
+		public EntitySet<BEST_PLAYER> BEST_PLAYERs
+		{
+			get
+			{
+				return this._BEST_PLAYERs;
+			}
+			set
+			{
+				this._BEST_PLAYERs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LEAGUE_GAME", Storage="_GAMEs", ThisKey="League_Id", OtherKey="League_Id")]
+		public EntitySet<GAME> GAMEs
+		{
+			get
+			{
+				return this._GAMEs;
+			}
+			set
+			{
+				this._GAMEs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LEAGUE_LEAGUE_IMAGE", Storage="_LEAGUE_IMAGEs", ThisKey="League_Id", OtherKey="League_Id")]
+		public EntitySet<LEAGUE_IMAGE> LEAGUE_IMAGEs
+		{
+			get
+			{
+				return this._LEAGUE_IMAGEs;
+			}
+			set
+			{
+				this._LEAGUE_IMAGEs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LEAGUE_LOG", Storage="_LOGs", ThisKey="League_Id", OtherKey="League_Id")]
+		public EntitySet<LOG> LOGs
+		{
+			get
+			{
+				return this._LOGs;
+			}
+			set
+			{
+				this._LOGs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LEAGUE_SPORT_LEAGUE", Storage="_SPORT_LEAGUEs", ThisKey="League_Id", OtherKey="League_Id")]
+		public EntitySet<SPORT_LEAGUE> SPORT_LEAGUEs
+		{
+			get
+			{
+				return this._SPORT_LEAGUEs;
+			}
+			set
+			{
+				this._SPORT_LEAGUEs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USER_LEAGUE", Storage="_USER", ThisKey="UserId", OtherKey="UserId", IsForeignKey=true)]
+		public USER USER
+		{
+			get
+			{
+				return this._USER.Entity;
+			}
+			set
+			{
+				USER previousValue = this._USER.Entity;
+				if (((previousValue != value) 
+							|| (this._USER.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._USER.Entity = null;
+						previousValue.LEAGUEs.Remove(this);
+					}
+					this._USER.Entity = value;
+					if ((value != null))
+					{
+						value.LEAGUEs.Add(this);
+						this._UserId = value.UserId;
+					}
+					else
+					{
+						this._UserId = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("USER");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_BEST_PLAYERs(BEST_PLAYER entity)
+		{
+			this.SendPropertyChanging();
+			entity.LEAGUE = this;
+		}
+		
+		private void detach_BEST_PLAYERs(BEST_PLAYER entity)
+		{
+			this.SendPropertyChanging();
+			entity.LEAGUE = null;
+		}
+		
+		private void attach_GAMEs(GAME entity)
+		{
+			this.SendPropertyChanging();
+			entity.LEAGUE = this;
+		}
+		
+		private void detach_GAMEs(GAME entity)
+		{
+			this.SendPropertyChanging();
+			entity.LEAGUE = null;
+		}
+		
+		private void attach_LEAGUE_IMAGEs(LEAGUE_IMAGE entity)
+		{
+			this.SendPropertyChanging();
+			entity.LEAGUE = this;
+		}
+		
+		private void detach_LEAGUE_IMAGEs(LEAGUE_IMAGE entity)
+		{
+			this.SendPropertyChanging();
+			entity.LEAGUE = null;
+		}
+		
+		private void attach_LOGs(LOG entity)
+		{
+			this.SendPropertyChanging();
+			entity.LEAGUE = this;
+		}
+		
+		private void detach_LOGs(LOG entity)
+		{
+			this.SendPropertyChanging();
+			entity.LEAGUE = null;
+		}
+		
+		private void attach_SPORT_LEAGUEs(SPORT_LEAGUE entity)
+		{
+			this.SendPropertyChanging();
+			entity.LEAGUE = this;
+		}
+		
+		private void detach_SPORT_LEAGUEs(SPORT_LEAGUE entity)
+		{
+			this.SendPropertyChanging();
+			entity.LEAGUE = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LEAGUE_IMAGE")]
+	public partial class LEAGUE_IMAGE : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Image_Id;
+		
+		private int _League_Id;
+		
+		private string _Location;
+		
+		private string _Name;
+		
+		private EntityRef<LEAGUE> _LEAGUE;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnImage_IdChanging(int value);
+    partial void OnImage_IdChanged();
+    partial void OnLeague_IdChanging(int value);
+    partial void OnLeague_IdChanged();
+    partial void OnLocationChanging(string value);
+    partial void OnLocationChanged();
+    partial void OnNameChanging(string value);
+    partial void OnNameChanged();
+    #endregion
+		
+		public LEAGUE_IMAGE()
+		{
+			this._LEAGUE = default(EntityRef<LEAGUE>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Image_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Image_Id
+		{
+			get
+			{
+				return this._Image_Id;
+			}
+			set
+			{
+				if ((this._Image_Id != value))
+				{
+					this.OnImage_IdChanging(value);
+					this.SendPropertyChanging();
+					this._Image_Id = value;
+					this.SendPropertyChanged("Image_Id");
+					this.OnImage_IdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_League_Id", DbType="Int NOT NULL")]
+		public int League_Id
+		{
+			get
+			{
+				return this._League_Id;
+			}
+			set
+			{
+				if ((this._League_Id != value))
+				{
+					if (this._LEAGUE.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnLeague_IdChanging(value);
+					this.SendPropertyChanging();
+					this._League_Id = value;
+					this.SendPropertyChanged("League_Id");
+					this.OnLeague_IdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Location", DbType="VarChar(MAX)")]
+		public string Location
+		{
+			get
+			{
+				return this._Location;
+			}
+			set
+			{
+				if ((this._Location != value))
+				{
+					this.OnLocationChanging(value);
+					this.SendPropertyChanging();
+					this._Location = value;
+					this.SendPropertyChanged("Location");
+					this.OnLocationChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="VarChar(MAX)")]
+		public string Name
+		{
+			get
+			{
+				return this._Name;
+			}
+			set
+			{
+				if ((this._Name != value))
+				{
+					this.OnNameChanging(value);
+					this.SendPropertyChanging();
+					this._Name = value;
+					this.SendPropertyChanged("Name");
+					this.OnNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LEAGUE_LEAGUE_IMAGE", Storage="_LEAGUE", ThisKey="League_Id", OtherKey="League_Id", IsForeignKey=true)]
+		public LEAGUE LEAGUE
+		{
+			get
+			{
+				return this._LEAGUE.Entity;
+			}
+			set
+			{
+				LEAGUE previousValue = this._LEAGUE.Entity;
+				if (((previousValue != value) 
+							|| (this._LEAGUE.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._LEAGUE.Entity = null;
+						previousValue.LEAGUE_IMAGEs.Remove(this);
+					}
+					this._LEAGUE.Entity = value;
+					if ((value != null))
+					{
+						value.LEAGUE_IMAGEs.Add(this);
+						this._League_Id = value.League_Id;
+					}
+					else
+					{
+						this._League_Id = default(int);
+					}
+					this.SendPropertyChanged("LEAGUE");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
