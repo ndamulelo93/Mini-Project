@@ -104,3 +104,131 @@ namespace SportWCF
                 }
             };
         }
+        
+          //ADMIN REPORTS===========================================================================
+        //type param to specify either 10 top goal scorer or overal best player
+        //ID = League ID
+        public List<bestplayer> gt_LeagueBestPlayer(string ID, string type)
+        {
+            int id = Convert.ToInt32(ID);
+
+            List<bestplayer> data = new List<bestplayer>();
+            using (SPORT_LINK_DBDataContext db = new SPORT_LINK_DBDataContext())
+            {
+                try
+                {
+                    if(type.Equals("Goals"))
+                    {
+
+                        var query = (from bp in db.BEST_PLAYERs
+                                     where bp.LEAGUE.League_Id.Equals(ID)
+                                     select new bestplayer
+                                     {
+                                         Name = bp.ScorerName,
+                                         Goals = Convert.ToInt32(bp.Goals),
+                                         Average = Convert.ToDecimal(bp.Average),
+                                     }).OrderByDescending(t => t.Goals).ToList();
+                        data = query;
+                    }
+                    else if (type.Equals("Average"))
+                    {
+
+                        var query = (from bp in db.BEST_PLAYERs
+                                     where bp.LEAGUE.League_Id.Equals(ID)
+                                     select new bestplayer
+                                     {
+                                         Name = bp.ScorerName,
+                                         Goals = Convert.ToInt32(bp.Goals),
+                                         Average = Convert.ToDecimal(bp.Average),
+                                     }).OrderByDescending(t => t.Average).ToList();
+                        data = query;
+                    }
+                    List<bestplayer> results = new List<bestplayer>();
+                 //   Take best 10 players
+                 if(data.Count() > 10)
+                    {
+                        for (int i = 1; i <= 10; i++)
+                        {
+                            results.Add(data[i]);
+                        }
+                        return results;
+                    }else
+                    {
+                          return data;
+                    }
+                }
+                catch(Exception)
+                {
+                    return null;
+                }
+            };
+        }
+
+        //Get teams in the league with highest average
+        public List<rep_Teams> gt_LeagueBestTeam(string leagueID)
+        {
+          //  List<rep_Teams> res = new List<rep_Teams>();
+            int id = Convert.ToInt32(leagueID);
+            using (SPORT_LINK_DBDataContext db = new SPORT_LINK_DBDataContext())
+            {
+                try
+                {
+                    var query = (from sl in db.SPORT_LEAGUEs where sl.LEAGUE.League_Id.Equals(id) select new
+                                 rep_Teams
+                                {
+                                    Name = sl.SPORT.Name,
+                                    numPlayers = Convert.ToInt32(sl.SPORT.NumPlayers),
+                                    Average = Convert.ToDecimal(sl.SPORT.Average),
+                                    Manager = sl.SPORT.USER.Name,
+                                }).OrderByDescending(t => t.Average).ToList();
+                    if(query != null)
+                    {
+                        return query;
+                    }else
+                    {
+                        return null;
+                    }
+                }catch(Exception)
+                {
+                    return null;
+                }
+            }
+        }
+
+        //Comparing all registered leagues
+        public List<rep_league> gt_LeaguesStats()
+        {
+            List<rep_league> data = new List<rep_league>();
+            using (SPORT_LINK_DBDataContext db = new SPORT_LINK_DBDataContext())
+            {
+                try
+                {
+                    var query = (from log in db.LEAGUEs select log).ToList();
+                    if(query != null)
+                    {
+                        foreach(LEAGUE leagues in query)
+                        {
+
+                            var res = (from sums in db.LOGs
+                                       where sums.LEAGUE.League_Id.Equals(leagues.League_Id)
+                                       select sums).ToList();
+                            int wins = Convert.ToInt32(res.Sum(p => p.Wins));
+                            int looses = Convert.ToInt32(res.Sum(p => p.Loose));
+                            int draws = Convert.ToInt32(res.Sum(p => p.Draws));
+
+                            rep_league items = new rep_league();
+                            items.LeagueName = leagues.Name;
+                            items.Wins = wins;
+                            items.Lose = looses;
+                            items.Draws = draws;
+                            data.Add(items);
+                        }
+                        return data;
+                    }
+                    return null;
+                }catch(Exception)
+                {
+                    return null;
+                }
+            };
+        }
