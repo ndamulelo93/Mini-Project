@@ -82,4 +82,191 @@ namespace SportWCF
     partial void UpdateVENUE(VENUE instance);
     partial void DeleteVENUE(VENUE instance);
     #endregion
+	    
+	    
+	    public SPORT_LINK_DBDataContext() : 
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["SPORT_DBConnectionString"].ConnectionString, mappingSource)
+		{
+			OnCreated();
+		}
+		
+		public SPORT_LINK_DBDataContext(string connection) : 
+				base(connection, mappingSource)
+		{
+			OnCreated();
+		}
+		
+		public SPORT_LINK_DBDataContext(System.Data.IDbConnection connection) : 
+				base(connection, mappingSource)
+		{
+			OnCreated();
+		}
+		
+		public SPORT_LINK_DBDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+				base(connection, mappingSource)
+		{
+			OnCreated();
+		}
+		
+		public SPORT_LINK_DBDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+				base(connection, mappingSource)
+		{
+			OnCreated();
+		}
+		
+		public System.Data.Linq.Table<BEST_PLAYER> BEST_PLAYERs
+		{
+			get
+			{
+				return this.GetTable<BEST_PLAYER>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Employee> Employees
+		{
+			get
+			{
+				return this.GetTable<Employee>();
+			}
+		}
+		
+		public System.Data.Linq.Table<GAME> GAMEs
+		{
+			get
+			{
+				return this.GetTable<GAME>();
+			}
+		}
+		
+		public System.Data.Linq.Table<GAME_IMAGE> GAME_IMAGEs
+		{
+			get
+			{
+				return this.GetTable<GAME_IMAGE>();
+			}
+		}
+		
+		public System.Data.Linq.Table<GAME_STAT> GAME_STATs
+		{
+			get
+			{
+				return this.GetTable<GAME_STAT>();
+			}
+		}
+		
+		public System.Data.Linq.Table<GAME_TICKET> GAME_TICKETs
+		{
+			get
+			{
+				return this.GetTable<GAME_TICKET>();
+			}
+		}
+		
+		public System.Data.Linq.Table<LEAGUE> LEAGUEs
+		{
+			get
+			{
+				return this.GetTable<LEAGUE>();
+			}
+		}
+		
+		public System.Data.Linq.Table<LEAGUE_IMAGE> LEAGUE_IMAGEs
+		{
+			get
+			{
+				return this.GetTable<LEAGUE_IMAGE>();
+			}
+		}
+		
+		public System.Data.Linq.Table<LEAGUES_GAME> LEAGUES_GAMEs
+		{
+			get
+			{
+				return this.GetTable<LEAGUES_GAME>();
+			}
+		}
+		
+		public System.Data.Linq.Table<LOG> LOGs
+		{
+			get
+			{
+				return this.GetTable<LOG>();
+			}
+		}
+		
+		public System.Data.Linq.Table<SPORT> SPORTs
+		{
+			get
+			{
+				return this.GetTable<SPORT>();
+			}
+		}
+		
+		public System.Data.Linq.Table<SPORT_LEAGUE> SPORT_LEAGUEs
+		{
+			get
+			{
+				return this.GetTable<SPORT_LEAGUE>();
+			}
+		}
+		
+		public System.Data.Linq.Table<TEAMIMAGE> TEAMIMAGEs
+		{
+			get
+			{
+				return this.GetTable<TEAMIMAGE>();
+			}
+		}
+		
+		public System.Data.Linq.Table<TEAMPLAYER> TEAMPLAYERs
+		{
+			get
+			{
+				return this.GetTable<TEAMPLAYER>();
+			}
+		}
+		
+		public System.Data.Linq.Table<USER> USERs
+		{
+			get
+			{
+				return this.GetTable<USER>();
+			}
+		}
+		
+		public System.Data.Linq.Table<USERIMAGE> USERIMAGEs
+		{
+			get
+			{
+				return this.GetTable<USERIMAGE>();
+			}
+		}
+		
+		public System.Data.Linq.Table<VENUE> VENUEs
+		{
+			get
+			{
+				return this.GetTable<VENUE>();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.BEST_PLAYER")]
+	public partial class BEST_PLAYER : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private int _league_ID;
+		
+		private string _ScorerName;
+		
+		private System.Nullable<int> _Goals;
+		
+		private System.Nullable<decimal> _Average;
+		
+		private EntityRef<LEAGUE> _LEAGUE;
+		
 		
