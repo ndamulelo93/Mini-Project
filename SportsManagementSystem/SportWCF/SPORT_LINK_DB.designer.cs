@@ -2394,3 +2394,178 @@ namespace SportWCF
 		
 		protected virtual void SendPropertyChanging()
 		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LEAGUES_GAMES")]
+	public partial class LEAGUES_GAME : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private string _teamOne;
+		
+		private string _teamTwo;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnteamOneChanging(string value);
+    partial void OnteamOneChanged();
+    partial void OnteamTwoChanging(string value);
+    partial void OnteamTwoChanged();
+    #endregion
+		
+		public LEAGUES_GAME()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_teamOne", DbType="VarChar(MAX)")]
+		public string teamOne
+		{
+			get
+			{
+				return this._teamOne;
+			}
+			set
+			{
+				if ((this._teamOne != value))
+				{
+					this.OnteamOneChanging(value);
+					this.SendPropertyChanging();
+					this._teamOne = value;
+					this.SendPropertyChanged("teamOne");
+					this.OnteamOneChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_teamTwo", DbType="VarChar(MAX)")]
+		public string teamTwo
+		{
+			get
+			{
+				return this._teamTwo;
+			}
+			set
+			{
+				if ((this._teamTwo != value))
+				{
+					this.OnteamTwoChanging(value);
+					this.SendPropertyChanging();
+					this._teamTwo = value;
+					this.SendPropertyChanged("teamTwo");
+					this.OnteamTwoChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.[LOG]")]
+	public partial class LOG : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Log_Id;
+		
+		private string _TeamName;
+		
+		private System.Nullable<int> _Position;
+		
+		private System.Nullable<int> _MatchPlayed;
+		
+		private System.Nullable<int> _Wins;
+		
+		private System.Nullable<int> _Loose;
+		
+		private System.Nullable<int> _Draws;
+		
+		private System.Nullable<int> _Points;
+		
+		private System.Nullable<int> _League_Id;
+		
+		private EntityRef<LEAGUE> _LEAGUE;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnLog_IdChanging(int value);
+    partial void OnLog_IdChanged();
+    partial void OnTeamNameChanging(string value);
+    partial void OnTeamNameChanged();
+    partial void OnPositionChanging(System.Nullable<int> value);
+    partial void OnPositionChanged();
+    partial void OnMatchPlayedChanging(System.Nullable<int> value);
+    partial void OnMatchPlayedChanged();
+    partial void OnWinsChanging(System.Nullable<int> value);
+    partial void OnWinsChanged();
+    partial void OnLooseChanging(System.Nullable<int> value);
+    partial void OnLooseChanged();
+    partial void OnDrawsChanging(System.Nullable<int> value);
+    partial void OnDrawsChanged();
+    partial void OnPointsChanging(System.Nullable<int> value);
+    partial void OnPointsChanged();
+    partial void OnLeague_IdChanging(System.Nullable<int> value);
+    partial void OnLeague_IdChanged();
+    #endregion
+			
