@@ -1059,3 +1059,580 @@ namespace SportWCF
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="GAME_GAME_IMAGE", Storage="_GAME", ThisKey="Game_Id", OtherKey="Game_Id", IsForeignKey=true)]
+		public GAME GAME
+		{
+			get
+			{
+				return this._GAME.Entity;
+			}
+			set
+			{
+				GAME previousValue = this._GAME.Entity;
+				if (((previousValue != value) 
+							|| (this._GAME.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._GAME.Entity = null;
+						previousValue.GAME_IMAGEs.Remove(this);
+					}
+					this._GAME.Entity = value;
+					if ((value != null))
+					{
+						value.GAME_IMAGEs.Add(this);
+						this._Game_Id = value.Game_Id;
+					}
+					else
+					{
+						this._Game_Id = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("GAME");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.GAME_STATS")]
+	public partial class GAME_STAT : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _stats_Id;
+		
+		private string _BestPlayer;
+		
+		private System.Nullable<int> _Team1_Position;
+		
+		private System.Nullable<int> _Team2_Position;
+		
+		private System.Nullable<int> _Team1_Fouls;
+		
+		private System.Nullable<int> _Team2_Fouls;
+		
+		private System.Nullable<int> _Game_Id;
+		
+		private System.Nullable<int> _Team1_YellowCard;
+		
+		private System.Nullable<int> _Team2_YellowCard;
+		
+		private System.Nullable<int> _Team1_RedCard;
+		
+		private System.Nullable<int> _Team2_RedCard;
+		
+		private System.Nullable<int> _Team1_NumCornerKick;
+		
+		private System.Nullable<int> _Team2_NumCornerKick;
+		
+		private System.Nullable<int> _Team1_GoalScored;
+		
+		private System.Nullable<int> _Team2_GoalScored;
+		
+		private System.Nullable<decimal> _Team1_OveralAverage;
+		
+		private System.Nullable<decimal> _Team2_OveralAverage;
+		
+		private EntityRef<GAME> _GAME;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onstats_IdChanging(int value);
+    partial void Onstats_IdChanged();
+    partial void OnBestPlayerChanging(string value);
+    partial void OnBestPlayerChanged();
+    partial void OnTeam1_PositionChanging(System.Nullable<int> value);
+    partial void OnTeam1_PositionChanged();
+    partial void OnTeam2_PositionChanging(System.Nullable<int> value);
+    partial void OnTeam2_PositionChanged();
+    partial void OnTeam1_FoulsChanging(System.Nullable<int> value);
+    partial void OnTeam1_FoulsChanged();
+    partial void OnTeam2_FoulsChanging(System.Nullable<int> value);
+    partial void OnTeam2_FoulsChanged();
+    partial void OnGame_IdChanging(System.Nullable<int> value);
+    partial void OnGame_IdChanged();
+    partial void OnTeam1_YellowCardChanging(System.Nullable<int> value);
+    partial void OnTeam1_YellowCardChanged();
+    partial void OnTeam2_YellowCardChanging(System.Nullable<int> value);
+    partial void OnTeam2_YellowCardChanged();
+    partial void OnTeam1_RedCardChanging(System.Nullable<int> value);
+    partial void OnTeam1_RedCardChanged();
+    partial void OnTeam2_RedCardChanging(System.Nullable<int> value);
+    partial void OnTeam2_RedCardChanged();
+    partial void OnTeam1_NumCornerKickChanging(System.Nullable<int> value);
+    partial void OnTeam1_NumCornerKickChanged();
+    partial void OnTeam2_NumCornerKickChanging(System.Nullable<int> value);
+    partial void OnTeam2_NumCornerKickChanged();
+    partial void OnTeam1_GoalScoredChanging(System.Nullable<int> value);
+    partial void OnTeam1_GoalScoredChanged();
+    partial void OnTeam2_GoalScoredChanging(System.Nullable<int> value);
+    partial void OnTeam2_GoalScoredChanged();
+    partial void OnTeam1_OveralAverageChanging(System.Nullable<decimal> value);
+    partial void OnTeam1_OveralAverageChanged();
+    partial void OnTeam2_OveralAverageChanging(System.Nullable<decimal> value);
+    partial void OnTeam2_OveralAverageChanged();
+    #endregion
+		
+		public GAME_STAT()
+		{
+			this._GAME = default(EntityRef<GAME>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_stats_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int stats_Id
+		{
+			get
+			{
+				return this._stats_Id;
+			}
+			set
+			{
+				if ((this._stats_Id != value))
+				{
+					this.Onstats_IdChanging(value);
+					this.SendPropertyChanging();
+					this._stats_Id = value;
+					this.SendPropertyChanged("stats_Id");
+					this.Onstats_IdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BestPlayer", DbType="VarChar(MAX)")]
+		public string BestPlayer
+		{
+			get
+			{
+				return this._BestPlayer;
+			}
+			set
+			{
+				if ((this._BestPlayer != value))
+				{
+					this.OnBestPlayerChanging(value);
+					this.SendPropertyChanging();
+					this._BestPlayer = value;
+					this.SendPropertyChanged("BestPlayer");
+					this.OnBestPlayerChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Team1_Position", DbType="Int")]
+		public System.Nullable<int> Team1_Position
+		{
+			get
+			{
+				return this._Team1_Position;
+			}
+			set
+			{
+				if ((this._Team1_Position != value))
+				{
+					this.OnTeam1_PositionChanging(value);
+					this.SendPropertyChanging();
+					this._Team1_Position = value;
+					this.SendPropertyChanged("Team1_Position");
+					this.OnTeam1_PositionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Team2_Position", DbType="Int")]
+		public System.Nullable<int> Team2_Position
+		{
+			get
+			{
+				return this._Team2_Position;
+			}
+			set
+			{
+				if ((this._Team2_Position != value))
+				{
+					this.OnTeam2_PositionChanging(value);
+					this.SendPropertyChanging();
+					this._Team2_Position = value;
+					this.SendPropertyChanged("Team2_Position");
+					this.OnTeam2_PositionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Team1_Fouls", DbType="Int")]
+		public System.Nullable<int> Team1_Fouls
+		{
+			get
+			{
+				return this._Team1_Fouls;
+			}
+			set
+			{
+				if ((this._Team1_Fouls != value))
+				{
+					this.OnTeam1_FoulsChanging(value);
+					this.SendPropertyChanging();
+					this._Team1_Fouls = value;
+					this.SendPropertyChanged("Team1_Fouls");
+					this.OnTeam1_FoulsChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Team2_Fouls", DbType="Int")]
+		public System.Nullable<int> Team2_Fouls
+		{
+			get
+			{
+				return this._Team2_Fouls;
+			}
+			set
+			{
+				if ((this._Team2_Fouls != value))
+				{
+					this.OnTeam2_FoulsChanging(value);
+					this.SendPropertyChanging();
+					this._Team2_Fouls = value;
+					this.SendPropertyChanged("Team2_Fouls");
+					this.OnTeam2_FoulsChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Game_Id", DbType="Int")]
+		public System.Nullable<int> Game_Id
+		{
+			get
+			{
+				return this._Game_Id;
+			}
+			set
+			{
+				if ((this._Game_Id != value))
+				{
+					if (this._GAME.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnGame_IdChanging(value);
+					this.SendPropertyChanging();
+					this._Game_Id = value;
+					this.SendPropertyChanged("Game_Id");
+					this.OnGame_IdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Team1_YellowCard", DbType="Int")]
+		public System.Nullable<int> Team1_YellowCard
+		{
+			get
+			{
+				return this._Team1_YellowCard;
+			}
+			set
+			{
+				if ((this._Team1_YellowCard != value))
+				{
+					this.OnTeam1_YellowCardChanging(value);
+					this.SendPropertyChanging();
+					this._Team1_YellowCard = value;
+					this.SendPropertyChanged("Team1_YellowCard");
+					this.OnTeam1_YellowCardChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Team2_YellowCard", DbType="Int")]
+		public System.Nullable<int> Team2_YellowCard
+		{
+			get
+			{
+				return this._Team2_YellowCard;
+			}
+			set
+			{
+				if ((this._Team2_YellowCard != value))
+				{
+					this.OnTeam2_YellowCardChanging(value);
+					this.SendPropertyChanging();
+					this._Team2_YellowCard = value;
+					this.SendPropertyChanged("Team2_YellowCard");
+					this.OnTeam2_YellowCardChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Team1_RedCard", DbType="Int")]
+		public System.Nullable<int> Team1_RedCard
+		{
+			get
+			{
+				return this._Team1_RedCard;
+			}
+			set
+			{
+				if ((this._Team1_RedCard != value))
+				{
+					this.OnTeam1_RedCardChanging(value);
+					this.SendPropertyChanging();
+					this._Team1_RedCard = value;
+					this.SendPropertyChanged("Team1_RedCard");
+					this.OnTeam1_RedCardChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Team2_RedCard", DbType="Int")]
+		public System.Nullable<int> Team2_RedCard
+		{
+			get
+			{
+				return this._Team2_RedCard;
+			}
+			set
+			{
+				if ((this._Team2_RedCard != value))
+				{
+					this.OnTeam2_RedCardChanging(value);
+					this.SendPropertyChanging();
+					this._Team2_RedCard = value;
+					this.SendPropertyChanged("Team2_RedCard");
+					this.OnTeam2_RedCardChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Team1_NumCornerKick", DbType="Int")]
+		public System.Nullable<int> Team1_NumCornerKick
+		{
+			get
+			{
+				return this._Team1_NumCornerKick;
+			}
+			set
+			{
+				if ((this._Team1_NumCornerKick != value))
+				{
+					this.OnTeam1_NumCornerKickChanging(value);
+					this.SendPropertyChanging();
+					this._Team1_NumCornerKick = value;
+					this.SendPropertyChanged("Team1_NumCornerKick");
+					this.OnTeam1_NumCornerKickChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Team2_NumCornerKick", DbType="Int")]
+		public System.Nullable<int> Team2_NumCornerKick
+		{
+			get
+			{
+				return this._Team2_NumCornerKick;
+			}
+			set
+			{
+				if ((this._Team2_NumCornerKick != value))
+				{
+					this.OnTeam2_NumCornerKickChanging(value);
+					this.SendPropertyChanging();
+					this._Team2_NumCornerKick = value;
+					this.SendPropertyChanged("Team2_NumCornerKick");
+					this.OnTeam2_NumCornerKickChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Team1_GoalScored", DbType="Int")]
+		public System.Nullable<int> Team1_GoalScored
+		{
+			get
+			{
+				return this._Team1_GoalScored;
+			}
+			set
+			{
+				if ((this._Team1_GoalScored != value))
+				{
+					this.OnTeam1_GoalScoredChanging(value);
+					this.SendPropertyChanging();
+					this._Team1_GoalScored = value;
+					this.SendPropertyChanged("Team1_GoalScored");
+					this.OnTeam1_GoalScoredChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Team2_GoalScored", DbType="Int")]
+		public System.Nullable<int> Team2_GoalScored
+		{
+			get
+			{
+				return this._Team2_GoalScored;
+			}
+			set
+			{
+				if ((this._Team2_GoalScored != value))
+				{
+					this.OnTeam2_GoalScoredChanging(value);
+					this.SendPropertyChanging();
+					this._Team2_GoalScored = value;
+					this.SendPropertyChanged("Team2_GoalScored");
+					this.OnTeam2_GoalScoredChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Team1_OveralAverage", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> Team1_OveralAverage
+		{
+			get
+			{
+				return this._Team1_OveralAverage;
+			}
+			set
+			{
+				if ((this._Team1_OveralAverage != value))
+				{
+					this.OnTeam1_OveralAverageChanging(value);
+					this.SendPropertyChanging();
+					this._Team1_OveralAverage = value;
+					this.SendPropertyChanged("Team1_OveralAverage");
+					this.OnTeam1_OveralAverageChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Team2_OveralAverage", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> Team2_OveralAverage
+		{
+			get
+			{
+				return this._Team2_OveralAverage;
+			}
+			set
+			{
+				if ((this._Team2_OveralAverage != value))
+				{
+					this.OnTeam2_OveralAverageChanging(value);
+					this.SendPropertyChanging();
+					this._Team2_OveralAverage = value;
+					this.SendPropertyChanged("Team2_OveralAverage");
+					this.OnTeam2_OveralAverageChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="GAME_GAME_STAT", Storage="_GAME", ThisKey="Game_Id", OtherKey="Game_Id", IsForeignKey=true)]
+		public GAME GAME
+		{
+			get
+			{
+				return this._GAME.Entity;
+			}
+			set
+			{
+				GAME previousValue = this._GAME.Entity;
+				if (((previousValue != value) 
+							|| (this._GAME.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._GAME.Entity = null;
+						previousValue.GAME_STATs.Remove(this);
+					}
+					this._GAME.Entity = value;
+					if ((value != null))
+					{
+						value.GAME_STATs.Add(this);
+						this._Game_Id = value.Game_Id;
+					}
+					else
+					{
+						this._Game_Id = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("GAME");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.GAME_TICKET")]
+	public partial class GAME_TICKET : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Ticket_Id;
+		
+		private System.Nullable<decimal> _Price;
+		
+		private System.Nullable<System.DateTime> _Date;
+		
+		private System.Nullable<int> _Quantity;
+		
+		private System.Nullable<int> _Game_Id;
+		
+		private EntityRef<GAME> _GAME;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnTicket_IdChanging(int value);
+    partial void OnTicket_IdChanged();
+    partial void OnPriceChanging(System.Nullable<decimal> value);
+    partial void OnPriceChanged();
+    partial void OnDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnDateChanged();
+    partial void OnQuantityChanging(System.Nullable<int> value);
+    partial void OnQuantityChanged();
+    partial void OnGame_IdChanging(System.Nullable<int> value);
+    partial void OnGame_IdChanged();
+    #endregion
+		
+		
