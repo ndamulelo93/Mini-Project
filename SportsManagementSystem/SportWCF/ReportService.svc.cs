@@ -277,6 +277,52 @@ namespace SportWCF
             };
         }
 
+public List<rep_Teams> gt_PlayerRanking(string sportID)
+        {
+            int id = Convert.ToInt32(sportID);
+            using (SPORT_LINK_DBDataContext db = new SPORT_LINK_DBDataContext())
+            {
+                try
+                {
+                    var query = (from tm in db.TEAMPLAYERs where tm.Sport_Id.Equals(id)
+                                 select new rep_Teams
+                                 {
+                                     Name = tm.Name,
+                                     Average = Convert.ToDecimal(tm.PerformanceRate),
+                                 }).OrderByDescending(t => t.Average).ToList();
+                    return query;
+                }catch(Exception)
+                {
+                    return null;
+                }
+            };
+        }
+
+        //Get Team Average for every league ever involved in
+        public List<rep_Teams> gt_TeamAverage(string sportID)
+        {
+            int id = Convert.ToInt32(sportID);
+            using (SPORT_LINK_DBDataContext db = new SPORT_LINK_DBDataContext())
+            {
+                try
+                {
+                    var query = (from tm in db.SPORT_LEAGUEs
+                                 where tm.Sport_Id.Equals(id)
+                                 select new rep_Teams
+                                 {
+                                     LeagueName = tm.LeagueName,
+                                     Average = Convert.ToDecimal(tm.TeamAverage),
+                                 }).OrderByDescending(t => t.Average).ToList();
+                    return query;
+                }
+                catch(Exception)
+                {
+                    return null;
+                }
+            };
+        }
+    }
+}
 
         
         
